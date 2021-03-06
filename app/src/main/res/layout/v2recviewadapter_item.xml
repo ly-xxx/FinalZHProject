@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/immm"
+                android:layout_width="60dp"
+                android:src="@mipmap/ic_launcher"
+                android:layout_height="60dp"
+                android:contentDescription="@string/todo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhihu"
+                android:id="@+id/author"
+                android:layout_toRightOf="@id/immm"
+                android:layout_alignTop="@id/immm"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhihu"
+                android:id="@+id/timee"
+                android:layout_marginTop="@dimen/dimen_3dp"
+                android:textColor="@color/c_cecece"
+                android:layout_toRightOf="@id/immm"
+                android:layout_below="@id/author"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhihu"
+                android:id="@+id/comment"
+                android:textColor="@color/c_cecece"
+                android:layout_alignParentRight="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/zhihu"
+                android:id="@+id/sectab"
+                android:textColor="@color/c_cecece"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:layout_toLeftOf="@id/comment"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/title"
+                android:textSize="18sp"
+                android:layout_margin="@dimen/dimen_5dp"
+                android:layout_below="@id/immm"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
